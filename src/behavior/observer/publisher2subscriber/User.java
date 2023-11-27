@@ -16,6 +16,10 @@ public class User {
         channel.add(this);
     }
 
+    public void unSubscribe(Channel channel) {
+        channel.remove(this);
+    }
+
     public void receiveMessage(Message message) {
         System.out.println("User: " + username);
         System.out.println("receive Message: " + message);

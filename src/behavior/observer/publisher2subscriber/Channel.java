@@ -16,6 +16,10 @@ public class Channel {
         this.subscribers.add(user);
     }
 
+    public void remove(User user) {
+        this.subscribers.remove(user);
+    }
+
     public void publishAll(Message message) {
         message.setPublisher(this);
         subscribers.forEach(subscriber -> subscriber.receiveMessage(message));
