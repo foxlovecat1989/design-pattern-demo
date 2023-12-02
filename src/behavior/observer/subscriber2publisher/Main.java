@@ -1,6 +1,6 @@
 package behavior.observer.subscriber2publisher;
 
-public class Client {
+public class Main {
     public static void main(String[] args) throws InterruptedException {
         Channel channelX = new Channel("ChannelX");
 

@@ -1,6 +1,6 @@
 package behavior.observer.publisher2subscriber;
 
-public class Client {
+public class Main {
     public static void main(String[] args) {
         Channel channelX = new Channel("ChannelX");
         Channel channelY = new Channel("ChannelY");
