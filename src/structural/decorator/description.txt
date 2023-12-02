@@ -1,0 +1,1 @@
+Add additional functionality to an object dynamically via composition.
