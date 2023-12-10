@@ -2,13 +2,13 @@ package behavior.observer.push;
 
 import behavior.observer.News;
 import behavior.observer.push.observable.LatestNewsPublisher;
-import behavior.observer.push.observer.Subscriber;
+import behavior.observer.push.observer.LatestNewsSubscriber;
 
 public class Main {
     public static void main(String[] args) {
-        Subscriber alan = new Subscriber("Alan");
-        Subscriber bess = new Subscriber("Bess");
-        Subscriber cathy = new Subscriber("Cathy");
+        LatestNewsSubscriber alan = new LatestNewsSubscriber("Alan");
+        LatestNewsSubscriber bess = new LatestNewsSubscriber("Bess");
+        LatestNewsSubscriber cathy = new LatestNewsSubscriber("Cathy");
 
         LatestNewsPublisher latestNewsPublisher = new LatestNewsPublisher();
         latestNewsPublisher.addSubscriber(alan);
